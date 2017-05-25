@@ -1,0 +1,17 @@
+body {
+ background-color: green;
+ font-family: 'Josefin Slab', sans-serif;
+}
+h1 {
+color: white;
+}
+label {
+color: white;
+}
+button {
+   width: 300px;
+   border: solid purple;
+   padding: 25px;
+   margin: 25px;
+        color: blue;
+}

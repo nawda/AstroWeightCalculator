@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <head>
+<link rel="stylesheet" href="styles.css">
+    <title>Astro Weight Calculator</title>
+    </head>
+    <body>
+        <h1>Astro Weight Calculator</h1>
+<!-- Input box for starting weight -->
+            <form action="" id="theForm" onsubmit="">
+            <label>Your Weight</label>
+            <input type="text" id="weight" name="weight" placeholder="Enter Weight"/>
+<!-- Planet selecter box with weight as value -->
+<!-- planet and values now generated from array in javascript -->
+            <label>Select a Planet</label>
+                <select id="planet"></select>
+                <!--<select id="planets">
+    <option value="">Select a Planet</option>
+</select> -->
+          <button type="button" onClick="Calculate()" id="button">Calculate</button><br>
+<!-- Display box to show results of your weight  -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <body>
+            <div ng-app="myApp" ng-controller="myCtrl">
+    <select ng-model="selectedName" ng-options="x for x in names">
+</select>
+    </div>
+        <script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function(VM) {
+    VM.names = ["Sun", "Saturn", "Pluto"];
+});
+</script>
+
+
+
+
+        </body>
+
+</html>
